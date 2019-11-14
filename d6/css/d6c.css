@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+/* button{
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    transition: background .5s;
+}
+button:hover{
+    background: aqua;
+} */
+.qutu {
+    height: 200px;
+    width: 200px;
+    background: aqua;
+    position: relative;
+    animation:  ani 4s infinite;
+}
+.qutu2 {
+    height: 200px;
+    width: 200px;
+    background: red;
+    position: absolute;
+    animation: ani2 4s infinite;
+    animation-delay: .8s;
+}
+@keyframes ani2{
+    0%{
+        top: 300px;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: 0;
+        background: rgb(209, 148, 17);
+    }
+    50%{
+        top: 0;
+        left: 300px;
+        background: rgb(148, 199, 29);
+    }
+    75%{
+        top: 300px;
+        left: 300px;
+        background: rgb(214, 32, 123);
+    }
+    100%{
+        top: 300px;
+        left: 0;
+    }
+}
+@keyframes ani{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0px;
+        left: 300px;
+        background: rgb(13, 63, 63);
+    }
+    50%{
+        top: 300px;
+        left: 300px;
+        background: rgb(19, 123, 172);
+    }
+    75%{
+        top: 300px;
+        left: 0;
+        background: rgb(31, 46, 68);
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+}
